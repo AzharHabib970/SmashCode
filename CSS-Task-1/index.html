@@ -1,0 +1,111 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Cards Using Grid System</title>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header, .footer {
+  background-color:lightgray;
+  color: black;
+  padding: 1rem;
+  text-align: left;
+}
+
+ h1{
+    font-weight: normal;
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem 2rem;
+}
+
+.column {
+  border: 2px ;
+  border-style: solid;
+  border-color: lightgray;
+  border-radius: 5px;
+  padding: 2rem 2rem;
+  height: 300px ;
+  box-sizing: border-box;
+}
+
+
+
+.column h3 {
+  margin: 0.5rem 0;
+  font-weight: normal;
+}
+
+.column p {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+    <h1>
+    Multiple height cards
+    </h1>
+    </div>
+    <div class="row">
+      <div class="column">
+       <h3>product 1</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, impedit. 
+            Delectus ipsa ea amet voluptatibus nam accusamus, fuga obcaecati libero fugit 
+            odio suscipit nihil optio porro sequi in aspernatur dignissimos deleniti, 
+            ducimus iusto error. Nisi eligendi at soluta vel adipisci placeat! Ex 
+            temporibus voluptatum officia delectus placeat nobis aliquid consectetur.
+
+        </p>
+      </div>
+      <div class="column">
+               <h3>product 2</h3>
+        <p>
+       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora nesciunt sed id nemo 
+       quidem distinctio molestiae pariatur iste itaque tenetur autem enim exercitationem nam 
+       est alias quos recusandae ab repellat iusto, perspiciatis architecto reiciendis
+       ?
+
+        </p>
+      </div>
+      <div class="column">
+               <h3>product 3</h3>
+         <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora nesciunt sed id nemo 
+            quidem distinctio molestiae pariatur iste itaque tenetur autem enim exercitationem nam 
+            est alias quos recusandae ab repellat iusto, perspiciatis architecto reiciendis
+            molestias debitis officiis! Inventore, nesciunt deserunt?
+        </p>
+      </div>
+      <div class="column">
+               <h3>product 4</h3>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora nesciunt sed id nemo 
+            quidem distinctio molestiae pariatur iste itaque tenetur autem enim exercitationem nam 
+            molestias debitis officiis! Inventore, nesciunt deserunt?
+
+        </p>
+      </div>
+      
+    </div>
+    <div class="footer">
+     <h1>
+    Bottom of page
+     </h1>
+    </div>
+
+</body>
+</html>
